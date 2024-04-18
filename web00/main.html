@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: auto;
+            /* border-collapse: collapse 使相鄰單元格的邊框合併 */
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        td:nth-child(1) {
+            width: 200px;
+        }
+
+        td:nth-child(2),
+        td:nth-child(3) {
+            width: 300px;
+        }
+
+        tr {
+            height: 150px;
+        }
+
+        img {
+            height: 150px;
+            /* 消除圖片底部會產生的空白 */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <!-- 第一列 -->
+        <tr>
+            <td>
+                <a href="./results/purchase.html" target="iframe">
+                    流行皮件
+                </a>
+            </td>
+            <td>
+                <a href="./results/leather1.html" target="_blank">
+                    <img src="./images/0403.jpg">
+                </a>
+            </td>
+            <td>
+                <a href="./results/leather2.html" target="_blank">
+                    <img src="./images/0404.jpg">
+                </a>
+            </td>
+        </tr>
+        <!-- 第二列 -->
+        <tr>
+            <td>流行鞋區</td>
+            <td><img src="./images/0405.jpg"></td>
+            <td><img src="./images/0406.jpg"></td>
+        </tr>
+        <!-- 第三列 -->
+        <tr>
+            <td>流行飾品</td>
+            <td><img src="./images/0407.jpg"></td>
+            <td><img src="./images/0403.jpg"> </td>
+        </tr>
+    </table>
+</body>
+
+</html>

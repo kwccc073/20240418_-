@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網路行銷購物網</title>
+    <style>
+        #main {
+            width: 1024px;
+            height: 768px;
+            margin: auto;
+        }
+
+        #top {
+            width: 1024px;
+            height: 120px;
+            background: red;
+            /* 背景圖片 */
+            background-image: url(./images/0401.jpg);
+
+        }
+
+        #top a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            line-height: 120px;
+            font-size: 52px;
+            font-family: "標楷體";
+            color: #FFFFFF;
+            text-shadow: 10px 10px 15px #333333;
+        }
+
+        #marquee {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            font-family: "標楷體";
+            color: #0000FF;
+            font-size: 19px;
+            background-image: url(./images/0402.jpg);
+        }
+
+
+        #content {
+            width: 1024px;
+            height: calc(768px - 120px - 30px - 78px);
+            background-image: url(./images/0402.jpg);
+        }
+
+        iframe {
+            width: 1024px;
+            height: 540px;
+        }
+
+        #footer {
+            width: 1024px;
+            height: 78px;
+            background: #666600;
+            color: #FFFFFF;
+            font-family: "標楷體";
+            line-height: 2;
+            text-align: left;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        #footer a:visited {
+            color: #FF9999;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="./music/0401.mp3" autoplay></audio>
+    <!-- 有撥放音樂 -->
+    <div id="main">
+        <!-- 網站標題區 -->
+        <div id="top">
+            <a href="./index.html">
+                流行精品購物網站
+            </a>
+        </div>
+
+        <!-- 跑馬燈區 -->
+        <div id="marquee">
+            <marquee>大家來購物網！精品商品特價大拍賣！要買
+                要快！</marquee>
+        </div>
+        <!-- 網頁內容區 -->
+        <div id="content">
+            <iframe src="./main.html" frameborder="0" name="iframe"></iframe>
+        </div>
+        <!-- 頁尾版權區 -->
+        <div id="footer">
+            <a href="./results/message.html" target="iframe">訪客留言版</a><br>
+            網頁設計及維護：XX○○○、最近更新日期：yyyy/mm/dd
+        </div>
+    </div>
+</body>
+
+</html>
